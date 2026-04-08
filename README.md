@@ -18,6 +18,23 @@ honestly just trying to survive this linear algebra project. made this from-scra
 
 ---
 
+## sound glow-up
+*before:*
+1) <audio src="output/1/noisy_audio_test1.wav" controls></audio>
+2) <audio src="output/3/noisy_audio_test3.wav" controls></audio>
+3) <audio src="output/4/noisy_audio_test4.wav" controls></audio>
+4) <audio src="output/6/noisy_audio_test6.wav" controls></audio>
+5) <audio src="output/10/noisy_audio_test10.wav" controls></audio>
+
+*after:*
+1) <audio src="output/1/denoised_output1.wav" controls></audio>
+2) <audio src="output/3/denoised_output3.wav" controls></audio>
+3) <audio src="output/4/denoised_output4.wav" controls></audio>
+4) <audio src="output/6/denoised_output6.wav" controls></audio>
+5) <audio src="output/10/denoised_output10.wav" controls></audio>
+
+---
+
 ## visual results
 
 heres how it looks.
