@@ -47,5 +47,5 @@ heres how it looks.
 
 ## references
 * **audio data:** from rajat borkar on kaggle. 
-* **math:** tripathi et al. (2024) for hamming-ola & threshold, harris (1978) for hamming, mota (2022) for dft/fft, wen (2025) for ifft, brunton (2022) for complex conjugate
+* **math:** tripathi et al. (2024) for hamming-ola & threshold, harris (1978) for hamming, mota (2022) for dft/fft, wen (2025) for ifft, brunton (2022) for complex conjugate. bonus: semmlow(2022) for the hamming window matlab code
 * **implementation:** followed the *handbook of real-time fast fourier transforms* because the butterfly signal flow diagrams.
