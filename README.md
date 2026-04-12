@@ -52,12 +52,12 @@ heres how it looks. (this one from noisy_audio_test1.wav output, access others a
 ### gain function visualization
 *graphed to help with understanding of properties in gain function introduced by tripathi and what its properties doing.*
 
-![Gain mask analysis](output/visual/gain_mask_analysis.png)
+![Gain mask analysis](data/visual/gain_mask_analysis.png)
 
 ### overlap-add math visualization
 *graphed to help with understanding of the underlying math of ola method and the reason for normalizing using cola sum.*
 
-![Overlap-add method](output/visual/overlap_add.png)
+![Overlap-add method](data/visual/overlap_add.png)
 
 ---
 
