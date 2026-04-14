@@ -1,4 +1,4 @@
-# audio denoising via matlab using custom fft and ifft (apr2026-sem252)
+# audio denoising via matlab using custom fft and ifft (mt1007-apr2026-sem252)
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2021a%2B-blue.svg)
 ![Algorithm](https://img.shields.io/badge/Algorithm-Radix--2_FFT-orange.svg)

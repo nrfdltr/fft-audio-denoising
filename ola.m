@@ -65,7 +65,7 @@ for m = 1:num_frames
 end
 title('2A. Shifted Sequences $\hat{x}_m[n - mH]$', 'Interpreter', 'latex', 'FontSize', 13);
 ylabel('Frame (m)'); axis tight; ylim([-1, num_frames*1.5]); grid off;
-% Apply m indicators (flipped so 1 is at the top)
+% m indicators
 set(gca, 'YTick', flip(yticks_2a), 'YTickLabel', flip(yticklabels_2a)); 
 set(gca, 'XTickLabel', []);
 
@@ -78,23 +78,21 @@ for m = 1:num_frames
     line([1 total_len], [y_offset y_offset], 'Color', c_gray, 'LineStyle', '-', 'LineWidth', 1);
     plot(n, windows_matrix(m, :) + y_offset, 'Color', colors(m,:), 'LineWidth', 1.5, 'LineStyle', '-');
     
-    % Store y-ticks for the m indicators
     yticks_2b(m) = y_offset;
     yticklabels_2b{m} = num2str(m);
 end
 title('2B. Shifted Windows $w[n - mH]$', 'Interpreter', 'latex', 'FontSize', 13);
 ylabel('Frame (m)'); axis tight; ylim([-0.5, num_frames*1.2]); grid off;
-% Apply m indicators
+% m indicators
 set(gca, 'YTick', flip(yticks_2b), 'YTickLabel', flip(yticklabels_2b)); 
 set(gca, 'XTickLabel', []);
 
 % --- row 3 L: unnormalized sum x ---
 ax3A = subplot(4, 2, 5); hold on;
-% Plot the dashed individual shifted frames first
 for m = 1:num_frames
     plot(n, frames_matrix(m, :), 'Color', [colors(m,:) 0.5], 'LineWidth', 1.5, 'LineStyle', '--');
 end
-% Plot the solid unnormalized sum on top
+
 plot(n, x_unnorm, 'Color', c_blue, 'LineWidth', 2, 'LineStyle', '-');
 title('3A. Unnormalized Accumulation $\tilde{x}[n]$', 'Interpreter', 'latex', 'FontSize', 13);
 ylabel('Amplitude'); axis tight; ylim([-1.3 1.3]); grid on;
@@ -113,7 +111,6 @@ h_limit = yline(1.08, 'Color', c_black, 'LineWidth', 1.5, 'LineStyle', '-');
 title('3B. $\sum_{m} w[n - mH] = C$', 'Interpreter', 'latex', 'FontSize', 13);
 axis tight; ylim([0 1.4]); grid on;
 set(gca, 'XTickLabel', []);
-% Add targeted legend for only these two lines
 legend([h_limit], {'C = 1.08'}, 'Location', 'eastoutside');
 
 % --- row 4: final compare ---
