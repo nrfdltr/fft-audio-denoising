@@ -115,8 +115,8 @@ legend([h_limit], {'C = 1.08'}, 'Location', 'eastoutside');
 
 % --- row 4: final compare ---
 ax4 = subplot(4, 2, [7, 8]); hold on;
-plot(n, x_final, 'Color', c_orange, 'LineWidth', 3.5, 'LineStyle', '-');
-plot(n, x_unnorm, 'Color', c_blue, 'LineWidth', 2.5, 'LineStyle', '-.');
+plot(n, x_final, 'Color', '#cf5eff', 'LineWidth', 2.5, 'LineStyle', '-');
+plot(n, x_unnorm, 'Color', c_blue, 'LineWidth', 1.25, 'LineStyle', '-.');
 title('4. $\hat{x}[n] = \tilde{x}[n] / C$', 'Interpreter', 'latex', 'FontSize', 14);
 xlabel('Discrete Time Index $n$', 'Interpreter', 'latex', 'FontSize', 12); 
 ylabel('Amplitude'); axis tight; ylim([-1.3 1.3]); grid on;
