@@ -9,7 +9,7 @@ honestly just trying to survive this linear algebra project. made the fourier fr
 
 ## outline
 
-### fourier.m
+### fourier.m (main implementation code)
 * **custom radix-2 fft:** achieve $O(N \log_2 N)$ efficiency, because the standard $N^2$ dft is very slow.
 * **ifft:** uses the complex conjugate property to flip the spectrum back into the time domain.
 * **manual hamming windowing:** tapers the frame boundaries to suppress the specxtral leakage.
@@ -32,12 +32,12 @@ honestly just trying to survive this linear algebra project. made the fourier fr
 heres how it looks. (all input and output data can be accesed through /data/##/)
 
 ### time-domain
-*top is the input audio. bottom is after the custom ifft put the pieces back together. (output from noisy_audio_test1.wav)*
+*top is the input audio. bottom is after the custom ifft put the pieces back together. (output from noisy_audio_test_01.wav)*
 
 ![Time Domain Comparison](data/01/time_domain_analysis.png)
 
 ### frequency-domain
-*plotted up to the nyquist frequency. the hamming window stops the bleeding -> high magnitudes survive. (output from noisy_audio_test1.wav)*
+*plotted up to the nyquist frequency. the hamming window stops the bleeding -> high magnitudes survive. (output from noisy_audio_test_01.wav)*
 
 ![Frequency Domain Comparison](data/01/frequency_domain_analysis.png)
 
