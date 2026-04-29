@@ -32,12 +32,12 @@ fourier calculations from-scratch without using `fft` or `ifft`. denoising scrip
 heres how it looks. (all input and output data can be accesed through /data/##/)
 
 ### time-domain
-*top is the input audio. bottom is after the custom ifft put the pieces back together. (output from noisy_audio_test1.wav)*
+*top is the input audio. bottom is after the custom ifft put the pieces back together. (output from noisy_audio_01.wav)*
 
 ![Time Domain Comparison](data/01/time_domain_analysis.png)
 
 ### frequency-domain
-*plotted up to the nyquist frequency. the hamming window stops the bleeding -> high magnitudes survive. (output from noisy_audio_test1.wav)*
+*plotted up to the nyquist frequency. the hamming window stops the bleeding -> high magnitudes survive. (output from noisy_audio_01.wav)*
 
 ![Frequency Domain Comparison](data/01/frequency_domain_analysis.png)
 
