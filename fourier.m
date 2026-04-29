@@ -6,15 +6,15 @@ clear; clc; close all;
 
 %% 1. prep
 % load audio (change audio name according to input)
-[x_noisy, fs] = audioread('noisy_audio_01.wav');
+[x_noisy, fs] = audioread('strang.wav');
 
 % monophonic audio
 if size(x_noisy, 2) > 1
     x_noisy = mean(x_noisy, 2); 
 end
 
-% use 3 seconds of audio
-max_samples = min(length(x_noisy), 3 * fs); 
+% use 5 seconds of audio
+max_samples = min(length(x_noisy), 5 * fs); 
 x_noisy = x_noisy(1:max_samples);
 
 %% 2. hamming
