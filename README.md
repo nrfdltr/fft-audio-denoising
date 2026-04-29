@@ -3,7 +3,7 @@
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2021a%2B-blue.svg)
 ![Algorithm](https://img.shields.io/badge/Algorithm-Radix--2_FFT-orange.svg)
 
-honestly just trying to survive this linear algebra project. made the fourier from-scratch without using `fft` or `ifft`. visualizations are for report.
+fourier calculations from-scratch without using `fft` or `ifft`. denoising script fourier.m are for implementation. visualizations scripts are for report presentation.
 
 ---
 
@@ -32,12 +32,12 @@ honestly just trying to survive this linear algebra project. made the fourier fr
 heres how it looks. (all input and output data can be accesed through /data/##/)
 
 ### time-domain
-*top is the input audio. bottom is after the custom ifft put the pieces back together. (output from noisy_audio_test_01.wav)*
+*top is the input audio. bottom is after the custom ifft put the pieces back together. (output from noisy_audio_test1.wav)*
 
 ![Time Domain Comparison](data/01/time_domain_analysis.png)
 
 ### frequency-domain
-*plotted up to the nyquist frequency. the hamming window stops the bleeding -> high magnitudes survive. (output from noisy_audio_test_01.wav)*
+*plotted up to the nyquist frequency. the hamming window stops the bleeding -> high magnitudes survive. (output from noisy_audio_test1.wav)*
 
 ![Frequency Domain Comparison](data/01/frequency_domain_analysis.png)
 
@@ -72,13 +72,13 @@ heres how it looks. (all input and output data can be accesed through /data/##/)
     ```bash
     git clone [https://github.com/nrfdltr/fft-audio-denoising.git](https://github.com/nrfdltr/fft-audio-denoising.git)
     ```
-2.  **run the script:** open matlab and run script
-3.  have fun i go sleep now zzzzzZZz
+2.  *for fourier.m*: copy the audio file from /data folder into the same folder as fourier.m.
+3.  **run the script:** open matlab to run script. *for fourier.m*: replace the audio file name in line 9 (according to target audio file).
 
 ---
 
 ## references
-* **audio data:** from rajat borkar on kaggle. 
+* **audio data:** crema dataset published by cao (2014)
 
 * **math:** tripathi et al. (2024) for denoise pipeline (hamming, mag threshold, cola),
 
