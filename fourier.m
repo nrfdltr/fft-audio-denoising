@@ -6,7 +6,7 @@ clear; clc; close all;
 
 %% 1. prep
 % load audio (change audio name according to input)
-[x_noisy, fs] = audioread('strang.wav');
+[x_noisy, fs] = audioread('noisy_audio.wav');
 
 % monophonic audio
 if size(x_noisy, 2) > 1
