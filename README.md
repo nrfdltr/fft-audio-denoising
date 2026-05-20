@@ -1,4 +1,4 @@
-# audio denoising via matlab using custom fft and ifft (mt1007-apr2026-sem252)
+# audio denoising via matlab using custom fft and ifft (mt1007-sem252)
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2021a%2B-blue.svg)
 ![Algorithm](https://img.shields.io/badge/Algorithm-Radix--2_FFT-orange.svg)
@@ -11,8 +11,8 @@ fourier calculations from-scratch without using `fft` or `ifft` functions in mat
 
 ### fourier.m (main implementation code)
 * **custom radix-2 fft:** achieve $O(N \log_2 N)$ efficiency, because the standard $N^2$ dft is very slow.
-* **ifft:** uses the complex conjugate property to flip the spectrum back into the time domain.
-* **manual hamming windowing:** tapers the frame boundaries to suppress the specxtral leakage.
+* **ifft:** uses the complex conjugate property (see references) to flip the spectrum back into the time domain.
+* **manual hamming windowing:** tapers the frame boundaries to suppress the spectral leakage.
 * **overlap-add synthesis:** 50% overlapping hop size, so $H = L/2$.
 * **magnitude thresholding:** used an over-subtraction factor $\alpha = 5.0$ and a spectral floor $\beta = 0.01$.
 
@@ -29,7 +29,7 @@ fourier calculations from-scratch without using `fft` or `ifft` functions in mat
 
 ## visual results
 
-heres how it looks. (all input and output data can be accesed through /data/##/)
+heres how it looks. (all input and output data can be accesed through folder /data)
 
 ### time-domain
 *top is the input audio. bottom is after the custom ifft put the pieces back together. (output from noisy_audio_01.wav)*
@@ -42,8 +42,7 @@ heres how it looks. (all input and output data can be accesed through /data/##/)
 ![Frequency Domain Comparison](data/01/frequency_domain_analysis.png)
 
 ### other samples
-*these are the outputs from .wav files in folders 03, 04, 06 and 10, in top-down order.*
-
+*these are the outputs from the other .wav files (can be accessed via the /data folder)*
 ![Samples output all](data/visual/samples.png)
 
 ## ! notice !
