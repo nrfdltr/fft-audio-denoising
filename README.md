@@ -77,9 +77,9 @@ heres how it looks. (all input and output data can be accesed through folder /da
 ---
 
 ## references
-* **audio data:** crema dataset published by cao (2014)
 
-* **math:** tripathi et al. (2024) for denoise pipeline (hamming, mag threshold, cola),
+* **math**:
+   tripathi et al. (2024) for denoise pipeline (hamming, mag threshold, cola),
 
     harris (1978) for hamming,
 
@@ -90,5 +90,9 @@ heres how it looks. (all input and output data can be accesed through folder /da
     brunton (2022) for complex conjugate theory,
 
     semmlow (2012) for the visuals matlab code.
+  
+(explicit details of the references are available in the main report)
+
+* **audio data:** crema dataset published by cao (2014)
 
 * **implementation:** followed the classical denoising pipeline introduced by tripathi et al. in '*quantum fourier transform–based denoising*' to implement into matlab code fourier.m.
